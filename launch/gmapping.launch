@@ -1,0 +1,16 @@
+
+<launch>
+
+    <node
+        name="gmapping1"
+        pkg="gmapping"
+        type="slam_gmapping"
+        args="scan:=base_scan_3"
+    />
+
+    <node
+        pkg="rviz"
+        type="rviz"
+        name="rviz"
+    />
+</launch>

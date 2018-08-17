@@ -1,0 +1,15 @@
+
+<launch>
+    <node
+        name="stageros"
+        pkg="stage_ros"
+        type="stageros"
+        args="$(find simstage_groupJ)/worlds/CBA_3rd.world"
+    />
+    <node
+        pkg="simstage_groupJ"
+        type="complex_nav.py"
+        name="complex_nav"
+        output="screen"
+    />
+</launch>
